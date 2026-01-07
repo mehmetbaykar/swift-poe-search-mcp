@@ -1,7 +1,7 @@
 {
   "name": "@mehmetbaykar/swift-poe-search-mcp",
   "version": "1.0.0",
-  "description": "Swift MCP Server - Model Context Protocol server written in Swift",
+  "description": "Swift Poe Search MCP Server - Model Context Protocol server written in Swift to do search and research with Poe API",
   "author": "Mehmet Baykar",
   "license": "MIT",
   "repository": {
