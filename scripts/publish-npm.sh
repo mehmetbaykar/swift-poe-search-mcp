@@ -19,4 +19,4 @@ ls -lh bin/*/swift-poe-search-mcp
 
 # Publish
 npm version "$VERSION" --no-git-tag-version --allow-same-version
-npm publish --access public
+npm publish --provenance --access public

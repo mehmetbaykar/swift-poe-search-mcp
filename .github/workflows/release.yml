@@ -2,7 +2,7 @@ name: Release
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
@@ -61,20 +61,37 @@ jobs:
   publish:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     steps:
       - uses: actions/checkout@v6
+
       - uses: actions/setup-node@v6
         with:
           node-version: "22"
           registry-url: "https://registry.npmjs.org"
+
       - uses: actions/download-artifact@v7
         with:
           pattern: binary-*
           path: artifacts
+
       - name: Show artifact sizes
         run: |
           echo "Binary sizes:"
           ls -lh artifacts/*/swift-poe-search-mcp
-      - run: ./scripts/publish-npm.sh
+
+      - name: Publish to npm
+        id: npm_publish
+        run: ./scripts/publish-npm.sh
+
+      - name: Cleanup on failure
+        if: failure() && steps.npm_publish.outcome == 'failure'
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "npm publish failed, cleaning up release and tag..."
+          gh release delete "${{ github.event.release.tag_name }}" --yes || true
+          git push --delete origin "${{ github.event.release.tag_name }}" || true
+          echo "Cleanup complete. Retry by creating a new release."
