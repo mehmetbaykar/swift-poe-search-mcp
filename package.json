@@ -1,0 +1,34 @@
+{
+  "name": "@mehmetbaykar/swift-poe-search-mcp",
+  "version": "1.0.0",
+  "description": "Swift MCP Server - Model Context Protocol server written in Swift",
+  "author": "Mehmet Baykar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehmetbaykar/swift-poe-search-mcp.git"
+  },
+  "bin": {
+    "swift-poe-search-mcp": "bin.js"
+  },
+  "scripts": {
+    "build": "swift build",
+    "start": "swift build && node bin.js"
+  },
+  "files": [
+    "bin.js",
+    "bin"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "swift",
+    "ai",
+    "perplexity",
+    "exa",
+    "search"
+  ]
+}
