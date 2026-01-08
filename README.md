@@ -32,7 +32,7 @@ npx @mehmetbaykar/swift-poe-search-mcp@latest
 
 **Via Swift (build from source):**
 ```bash
-git clone <repo>
+git clone https://github.com/mehmetbaykar/swift-poe-search-mcp.git
 cd swift-poe-search-mcp
 swift build -c release
 ```
