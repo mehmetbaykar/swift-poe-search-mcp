@@ -5,6 +5,7 @@ public enum Provider: String, CaseIterable, Sendable {
   case perplexity
   case reka
   case linkup
+  case poe
 }
 
 public struct Config: Sendable {
@@ -23,7 +24,7 @@ extension Config {
 extension Config {
 
   public static var liveValue: Config {
-    let defaultEnabledProviders: Set<Provider> = [.perplexity, .reka, .linkup, .exa]
+    let defaultEnabledProviders: Set<Provider> = [.perplexity, .reka, .linkup, .exa, .poe]
     return .init(
       enabledProviders: {
         guard let envValue = ProcessInfo.processInfo.environment["ENABLED_PROVIDERS"] else {

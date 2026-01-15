@@ -46,6 +46,10 @@ extension ToolProvider {
         ]
       }
 
+      if config.isProviderEnabled(.poe) {
+        tools += [PoeFastWebSearchTool()]
+      }
+
       return tools
     })
   }
