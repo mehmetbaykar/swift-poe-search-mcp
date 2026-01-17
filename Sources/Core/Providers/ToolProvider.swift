@@ -1,6 +1,5 @@
+import FastMCP
 import Foundation
-import MCP
-import MCPToolkit
 
 public struct ToolProvider: Sendable {
   public var get: @Sendable () -> [any MCPTool]

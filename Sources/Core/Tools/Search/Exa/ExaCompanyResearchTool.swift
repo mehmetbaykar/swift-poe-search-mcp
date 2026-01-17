@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct ExaCompanyResearchTool: MCPTool {
   let name = "exa_company_research"

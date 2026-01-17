@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 @Schemable
 public struct PoeMessage: Codable, Sendable {

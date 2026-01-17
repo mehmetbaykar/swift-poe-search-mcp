@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct RekaVerifyClaimTool: MCPTool {
   let name = "reka_verify_claim"

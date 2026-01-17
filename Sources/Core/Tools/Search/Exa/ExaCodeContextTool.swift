@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct ExaCodeContextTool: MCPTool {
   let name = "exa_code_context"

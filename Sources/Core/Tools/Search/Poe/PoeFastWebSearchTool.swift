@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct PoeFastWebSearchTool: MCPTool {
   let name = "poe_fast_web_search"

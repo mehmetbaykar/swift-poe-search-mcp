@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct ExaCrawlUrlTool: MCPTool {
   let name = "exa_crawl_url"

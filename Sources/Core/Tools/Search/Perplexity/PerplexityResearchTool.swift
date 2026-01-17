@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct PerplexityResearchTool: MCPTool {
   let name = "perplexity_research"

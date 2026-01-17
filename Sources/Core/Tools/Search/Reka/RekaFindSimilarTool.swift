@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct RekaFindSimilarTool: MCPTool {
   let name = "reka_find_similar"

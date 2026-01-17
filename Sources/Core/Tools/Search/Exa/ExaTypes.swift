@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 @Schemable
 enum ExaOperation: String, Codable, Sendable, CaseIterable {

@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct LinkupSearchTool: MCPTool {
   let name = "linkup_search"

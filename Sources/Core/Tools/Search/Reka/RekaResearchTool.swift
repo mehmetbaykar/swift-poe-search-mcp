@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct RekaResearchTool: MCPTool {
   let name = "reka_research"

@@ -3,18 +3,14 @@ import PackageDescription
 
 func externalDependencies() -> [Package.Dependency] {
   let dependencies: [Package.Dependency] = [
-    .package(url: "https://github.com/modelcontextprotocol/swift-sdk", from: "0.10.2"),
-    .package(url: "https://github.com/swift-server/swift-service-lifecycle.git", from: "2.9.1"),
-    .package(url: "https://github.com/mehmetbaykar/swift-mcp-toolkit.git", from: "0.2.1"),
+    .package(url: "https://github.com/mehmetbaykar/swift-fast-mcp.git", from: "1.0.1")
   ]
   return dependencies
 }
 
 func coreDependencies() -> [Target.Dependency] {
   return [
-    .product(name: "MCP", package: "swift-sdk"),
-    .product(name: "ServiceLifecycle", package: "swift-service-lifecycle"),
-    .product(name: "MCPToolkit", package: "swift-mcp-toolkit"),
+    .product(name: "FastMCP", package: "swift-fast-mcp")
   ]
 }
 

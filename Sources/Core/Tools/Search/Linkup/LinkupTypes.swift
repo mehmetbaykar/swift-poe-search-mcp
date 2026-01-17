@@ -1,4 +1,4 @@
-import MCPToolkit
+import FastMCP
 
 @Schemable
 enum SearchDepth: String, Codable, Sendable, CaseIterable {

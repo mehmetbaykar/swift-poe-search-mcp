@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct ExaFindSimilarTool: MCPTool {
   let name = "exa_find_similar"

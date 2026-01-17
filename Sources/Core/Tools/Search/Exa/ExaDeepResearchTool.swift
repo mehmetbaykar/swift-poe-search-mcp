@@ -1,5 +1,5 @@
 import Foundation
-import MCPToolkit
+import FastMCP
 
 struct ExaDeepResearchTool: MCPTool {
   let name = "exa_deep_research"
