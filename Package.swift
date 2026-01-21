@@ -3,7 +3,7 @@ import PackageDescription
 
 func externalDependencies() -> [Package.Dependency] {
   let dependencies: [Package.Dependency] = [
-    .package(url: "https://github.com/mehmetbaykar/swift-fast-mcp.git", from: "1.0.1")
+    .package(url: "https://github.com/mehmetbaykar/swift-fast-mcp.git", from: "1.0.2")
   ]
   return dependencies
 }
