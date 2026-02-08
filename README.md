@@ -2,6 +2,14 @@
 
 A Swift MCP (Model Context Protocol) server providing AI-powered search and research tools via the Poe API proxy. Supports 4 providers with 16 specialized tools.
 
+<p align="center">
+If you found this helpful, you can support more open source work!
+<br><br>
+<a href="https://buymeacoffee.com/mehmetbaykar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60"></a>
+</p>
+
+---
+
 ## Overview
 
 This server acts as a bridge between MCP clients and multiple AI/search providers through Poe's unified API:
